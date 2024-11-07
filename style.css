@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primaryColor : #333;
+    --secondaryColor : #f1f1f1;
+}
+
+body{
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    transition: all 0.4s;
+}
+
+div{
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    padding: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--primaryColor);
+    cursor:pointer;
+    transition: all 0.4s;
+}
+
+.darkMode{
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+    transition: all 0.4s;
+}
+
+.darkMode div{
+    background-color: var(--secondaryColor);
+    color: var(--primaryColor);
+    transition: all 0.4s;
+}
